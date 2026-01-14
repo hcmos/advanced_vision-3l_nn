@@ -69,4 +69,4 @@ ReLU関数（損失=0.06）<br>
 leaky-ReLU関数（損失=0.06）<br>
 <img src="results/neuralNet_CE_4_3_20_1.png" width="320">
 
-ReLU関数とleaky-ReLU関数では特に差が見られなかった．
+ReLU関数とleaky-ReLU関数ではあまり差が見られなかった．
