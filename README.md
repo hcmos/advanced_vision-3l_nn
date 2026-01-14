@@ -21,7 +21,7 @@ h_l = \sigma\left(s_l\right) = \frac{1}{1 + \exp\left(-s_l\right)}
 
 ReLU関数
 ```math
-h_l = \operatorname{ReLU}\left(s_l\right) =
+h_l = \text{ReLU}\left(s_l\right) =
 \begin{cases}
  s_l & \text{if } s_l > 0 \\
  0 & \text{if } s_l \le 0
@@ -30,7 +30,7 @@ h_l = \operatorname{ReLU}\left(s_l\right) =
 
 leaky-ReLU関数（今回追加したもの）
 ```math
-h_l = \operatorname{L\text{-}ReLU}\left(s_l\right) =
+h_l = \text{L-ReLU}\left(s_l\right) =
 \begin{cases}
  s_l & \text{if } s_l > 0 \\
  a s_l & \text{if } s_l \le 0
