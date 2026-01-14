@@ -16,28 +16,28 @@ leaky-ReLU関数は，ReLU関数の負の入力に対してノードの勾配が
 
 シグモイド関数
 $$
-h_l = \sigma(s_l) = \frac{1}{1 + \exp(-s_l)}
+h_l = \sigma\left(s_l\right) = \frac{1}{1 + \exp\left(-s_l\right)}
 $$
 
 ReLU関数
 $$
-h_l = \operatorname{ReLU}(s_l) =
+h_l = \operatorname{ReLU}\left(s_l\right) =
 \begin{cases}
- s_l & s_l > 0 \\
- 0 & s_l \le 0
+ s_l & \text{if } s_l > 0 \\
+ 0 & \text{if } s_l \le 0
 \end{cases}
 $$
 
 leaky-ReLU関数（今回追加したもの）
 $$
-h_l = \operatorname{L-ReLU}(s_l) =
+h_l = \operatorname{L\text{-}ReLU}\left(s_l\right) =
 \begin{cases}
- s_l & s_l > 0 \\
- as_l & s_l \le 0
+ s_l & \text{if } s_l > 0 \\
+ a s_l & \text{if } s_l \le 0
 \end{cases}
 $$
 
-※変数は参考書のもので，$s$が１つ下のニューロンからの入力の総和であり，$h$は活性化関数を通した後の出力．
+※変数は参考書のもので，$`s`$が１つ下のニューロンからの入力の総和であり，$`h`$は活性化関数を通した後の出力．
 
 
 ## 実行結果
@@ -48,7 +48,7 @@ hDim = 20       # 中間層のノード数
 alpha = 1       # 学習率
 ```
 
-### 学習データとニューラルネットワークの予測値$p_i$
+### 学習データとニューラルネットワークの予測値$`p_i`$
 シグモイド関数（正解率=0.83）<br>
 <img src="results/neuralNet_result_train_4_1_20_1.png" width="320">
 
